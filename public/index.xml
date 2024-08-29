@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Blog</title>
+    <link>http://localhost:45844/</link>
+    <description>Recent content on My Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Aug 2024 18:45:22 +0530</lastBuildDate>
+    <atom:link href="http://localhost:45844/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:45844/posts/my-first-post/</link>
+      <pubDate>Thu, 29 Aug 2024 18:45:22 +0530</pubDate>
+      <guid>http://localhost:45844/posts/my-first-post/</guid>
+      <description>Introduction Hi i am shivam dave, and this is my first blog text.&#xA;Visit my Github website!</description>
+    </item>
+  </channel>
+</rss>
