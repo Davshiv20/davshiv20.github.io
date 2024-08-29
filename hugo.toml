@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://davshiv20.github.io/myblog/'
 languageCode = 'en-us'
 title = 'My Blog'
 theme = 'ananke' 
