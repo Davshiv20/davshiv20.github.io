@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Shiv&#39;s Blog</title>
-    <link>//localhost:1313/davshiv20github.io/posts/</link>
+    <link>//localhost:51367/davshiv20github.io/posts/</link>
     <description>Recent content in Posts on Shiv&#39;s Blog</description>
     <generator>Hugo -- 0.133.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Aug 2024 18:45:22 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/davshiv20github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Sep 2024 14:27:02 +0530</lastBuildDate>
+    <atom:link href="//localhost:51367/davshiv20github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Cp Journey</title>
+      <link>//localhost:51367/davshiv20github.io/posts/my-cp-journey/</link>
+      <pubDate>Tue, 03 Sep 2024 14:27:02 +0530</pubDate>
+      <guid>//localhost:51367/davshiv20github.io/posts/my-cp-journey/</guid>
+      <description>My Competitive Programming Journey Problem: A. Jellyfish and Undertale Explanation of the Problem:
+The problem &amp;ldquo;A. Jellyfish and Undertale&amp;rdquo; from TLE Eliminator&amp;rsquo;s CP-31 sheet is a 900-rated problem. Here’s a step-by-step breakdown of how to solve it:
+Understand the Problem Statement: Start by carefully reading the problem. Identify the key requirements and constraints. Approach and Strategy: Describe the approach you took to solve the problem. Explain the algorithm or data structures used.</description>
+    </item>
     <item>
       <title>My First Post</title>
-      <link>//localhost:1313/davshiv20github.io/posts/my-first-post/</link>
+      <link>//localhost:51367/davshiv20github.io/posts/my-first-post/</link>
       <pubDate>Thu, 29 Aug 2024 18:45:22 +0530</pubDate>
-      <guid>//localhost:1313/davshiv20github.io/posts/my-first-post/</guid>
+      <guid>//localhost:51367/davshiv20github.io/posts/my-first-post/</guid>
       <description>Introduction Hi i am shivam dave, and this is my first blog text.
 Visit my Github website!</description>
     </item>
