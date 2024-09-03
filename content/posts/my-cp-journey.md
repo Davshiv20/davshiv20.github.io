@@ -1,10 +1,10 @@
 +++
 title = 'My CP Journey'
 date = 2024-09-03T14:27:02+05:30
-draft = true
+draft = false
 +++
 
-## My Competitive Programming Journey
+## My Competitive Programming Pilgrimage
 
 <details>
 <summary><b>Problem: A. Jellyfish and Undertale</b></summary>
