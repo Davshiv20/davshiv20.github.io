@@ -1,5 +1,10 @@
-baseURL = 'davshiv20.github.io/davshiv20github.io/'
+baseURL = 'https://davshiv20.github.io/'
 languageCode = 'en-us'
 title = "Shiv's Blog"
 theme = 'PaperMod'
+enableRobotsTXT = true
+paginate = 5
+
+[params]
+  env = "production"
 
