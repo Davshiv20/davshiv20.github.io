@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: clowenhg/hugo-action@v1
         with:
           hugo-version: '0.148.0'
           extended: true
