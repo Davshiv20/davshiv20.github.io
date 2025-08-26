@@ -7,4 +7,6 @@ draft = false
 
 Hi i am **shivam** dave, and this is *my first blog* text.
 
+I currently work at Deloitte and I am a Software Engineer
+
 Visit my [Github](https://github.com/Davshiv20) website!
