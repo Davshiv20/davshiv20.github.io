@@ -3,8 +3,16 @@ languageCode = 'en-us'
 title = "Shiv's Blog"
 theme = 'PaperMod'
 enableRobotsTXT = true
-paginate = 5
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[pagination]
+  pagerSize = 5
 
 [params]
   env = "production"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
