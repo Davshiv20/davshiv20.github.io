@@ -30,6 +30,11 @@ Stay updated with my latest posts by subscribing to my RSS feeds. You can subscr
 - **Description**: Mixed topics, random thoughts, and miscellaneous content
 - **Best for**: Readers who enjoy diverse content
 
+#### 📚 **Books Posts**
+- **URL**: [{{ "books/index.xml" | absURL }}]({{ "books/index.xml" | absURL }})
+- **Description**: Book reviews, recommendations, and reading notes
+- **Best for**: Readers interested in book recommendations and reviews
+
 ### How to Subscribe
 
 #### Using Feedly
