@@ -2,6 +2,7 @@
 title = 'My CP Journey'
 date = 2024-09-03T14:27:02+05:30
 draft = false
+categories = ["work"]
 +++
 
 ## My Competitive Programming Pilgrimage

@@ -1,7 +1,8 @@
 +++
 title = 'Past 12 Months of my Life'
 date = 2025-08-26
-draft = true
+draft = false
+categories = ["life"]
 +++
 
 ## The Placement

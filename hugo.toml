@@ -11,6 +11,18 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [params]
   env = "production"
   googleAnalytics = ""  
+  mainSections = ["work", "everything", "life"]
+  ShowFullTextinRSS = true
+  images = ["/images/gohugo-default-sample-hero-image.jpg"]
+  
+  [params.author]
+    name = "Shivam Dave"
+    email = "shivam@example.com"
+    bio = "Software Engineer passionate about technology and personal growth"
+
+[services]
+  [services.rss]
+    limit = 20
 
 [markup]
   [markup.goldmark]

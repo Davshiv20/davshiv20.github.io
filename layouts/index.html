@@ -1,0 +1,272 @@
+{{ define "main" }}
+<div class="tabbed-container">
+  <div class="tab-navigation">
+    <button class="tab-button active" data-tab="work">Work</button>
+    <button class="tab-button" data-tab="everything">Everything</button>
+    <button class="tab-button" data-tab="life">Life</button>
+  </div>
+  
+  <div class="rss-links">
+    <a href="{{ "index.xml" | absURL }}" class="rss-link" title="RSS Feed">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4.259 3.09c-.814 0-1.468.654-1.468 1.468s.654 1.468 1.468 1.468 1.468-.654 1.468-1.468-.654-1.468-1.468-1.468zm0 2.936c-.814 0-1.468.654-1.468 1.468s.654 1.468 1.468 1.468 1.468-.654 1.468-1.468-.654-1.468-1.468-1.468zm0 2.936c-.814 0-1.468.654-1.468 1.468s.654 1.468 1.468 1.468 1.468-.654 1.468-1.468-.654-1.468-1.468-1.468z"/>
+        <path d="M6.5 3.5c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm2 0c0-.3.2-.5.5-.5s.5.2.5.5-.2.5-.5.5-.5-.2-.5-.5z"/>
+        <path d="M6.5 6.5c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm2 0c0-.3.2-.5.5-.5s.5.2.5.5-.2.5-.5.5-.5-.2-.5-.5z"/>
+        <path d="M6.5 9.5c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm2 0c0-.3.2-.5.5-.5s.5.2.5.5-.2.5-.5.5-.5-.2-.5-.5z"/>
+      </svg>
+      RSS Feed
+    </a>
+    <a href="{{ "work/index.xml" | absURL }}" class="rss-link" title="Work RSS Feed">Work RSS</a>
+    <a href="{{ "life/index.xml" | absURL }}" class="rss-link" title="Life RSS Feed">Life RSS</a>
+    <a href="{{ "everything/index.xml" | absURL }}" class="rss-link" title="Everything RSS Feed">Everything RSS</a>
+  </div>
+  
+  <div class="tab-content">
+    <div id="work-tab" class="tab-pane active">
+      <div class="posts-grid">
+        {{ range where .Site.RegularPages "Section" "work" }}
+        <article class="post-card">
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+          <p class="post-summary">{{ .Summary | truncate 150 }}</p>
+        </article>
+        {{ end }}
+        {{ range where .Site.RegularPages "Section" "posts" }}
+          {{ if in .Params.categories "work" }}
+          <article class="post-card">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+            <p class="post-summary">{{ .Summary | truncate 150 }}</p>
+          </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    
+    <div id="life-tab" class="tab-pane">
+      <div class="posts-grid">
+        {{ range where .Site.RegularPages "Section" "life" }}
+        <article class="post-card">
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+          <p class="post-summary">{{ .Summary | truncate 150 }}</p>
+        </article>
+        {{ end }}
+        {{ range where .Site.RegularPages "Section" "posts" }}
+          {{ if in .Params.categories "life" }}
+          <article class="post-card">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+            <p class="post-summary">{{ .Summary | truncate 150 }}</p>
+          </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    
+    <div id="everything-tab" class="tab-pane">
+      <div class="posts-grid">
+        {{ range where .Site.RegularPages "Section" "everything" }}
+        <article class="post-card">
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+          <p class="post-summary">{{ .Summary | truncate 150 }}</p>
+        </article>
+        {{ end }}
+        {{ range where .Site.RegularPages "Section" "posts" }}
+          {{ if in .Params.categories "everything" }}
+          <article class="post-card">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p class="post-meta">{{ .Date.Format "January 2, 2006" }}</p>
+            <p class="post-summary">{{ .Summary | truncate 150 }}</p>
+          </article>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.tabbed-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.tab-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+  gap: 0;
+}
+
+.rss-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab-button:hover {
+  color: var(--primary);
+  background: var(--theme);
+}
+
+.tab-button.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  background: var(--theme);
+}
+
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.rss-link:hover {
+  color: var(--primary);
+  background: var(--entry);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-l1);
+}
+
+.rss-link svg {
+  flex-shrink: 0;
+}
+
+.tab-content {
+  min-height: 400px;
+}
+
+.tab-pane {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.posts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 100%;
+}
+
+.post-card {
+  background: var(--theme);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-l1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-l2);
+}
+
+.post-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.post-card h3 a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-card h3 a:hover {
+  color: var(--accent);
+}
+
+.post-meta {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+}
+
+.post-summary {
+  color: var(--content);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .tab-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .posts-grid {
+    gap: 1rem;
+  }
+  
+  .post-card {
+    padding: 1rem;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabPanes = document.querySelectorAll('.tab-pane');
+  
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const targetTab = this.getAttribute('data-tab');
+      
+      // Remove active class from all buttons and panes
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabPanes.forEach(pane => pane.classList.remove('active'));
+      
+      // Add active class to clicked button and corresponding pane
+      this.classList.add('active');
+      document.getElementById(targetTab + '-tab').classList.add('active');
+    });
+  });
+});
+</script>
+{{ end }}
+
+
