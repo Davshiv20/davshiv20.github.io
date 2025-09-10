@@ -1,6 +1,6 @@
 baseURL = 'https://davshiv20.github.io/'
 languageCode = 'en-us'
-title = "Shiv's Blog"
+title = "Shivam's Blog"
 theme = 'PaperMod'
 enableRobotsTXT = true
 ignoreLogs = ['warning-goldmark-raw-html']

@@ -1,4 +1,4 @@
-# Shiv's Blog – Hugo + PaperMod
+# Shivam's Blog – Hugo + PaperMod
 
 A fast, minimal blog powered by Hugo and the PaperMod theme. This README covers local setup, content authoring, customization, and deployment to GitHub Pages.
 

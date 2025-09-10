@@ -1,6 +1,6 @@
 
 +++
-title = "Welcome to Shiv's Blog"
+title = "Welcome to Shivam's Blog"
 +++
 
 Hi 👋 Welcome to my blog.
