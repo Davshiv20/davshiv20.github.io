@@ -38,7 +38,7 @@ I am going to be posting my learnings from each chapter.
 
 ### My Thoughts
 
-I really like how the author encourages active engagement and requires the reader to truly grapple with the technical concepts, rather than simply presenting everything in an overly simplified manner. I've only read one chapter so I can't say for sure, but I can assume that this project provides a solid foundation for the rest of the book and the chapters ahead. It's fair to say that I am excited to dive in further and write better content on it as I proceed.
+I really like how the author encourages active engagement and requires the reader to truly grapple with the technical concepts, rather than simply presenting everything in an overly simplified manner. I've only read one chapter so I can't say for sure, but I can assume that this chapter provides a solid foundation for the rest of the book. It's fair to say that I am excited to dive in further and write better content on it as I proceed.
 
 ---
 
