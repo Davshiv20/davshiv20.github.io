@@ -1,7 +1,7 @@
 +++
 title = "My experience working at Upsurge Labs"
 date = 2025-09-09
-draft = false
+draft = true
 +++
 
 ## The Opportunity
